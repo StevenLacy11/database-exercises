@@ -4,6 +4,8 @@ USE employees;
 # ORDER BY last_name DESC
 # LIMIT 10;
 
-# SELECT DISTINCT salaries FROM employees
+SELECT emp_no FROM salaries
+ORDER BY salary desc
+LIMIT 5 OFFSET 10;
 
 
