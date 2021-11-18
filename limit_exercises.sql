@@ -6,6 +6,6 @@ USE employees;
 
 SELECT emp_no FROM salaries
 ORDER BY salary desc
-LIMIT 5 OFFSET 10;
+LIMIT 5 OFFSET 50;
 
 
