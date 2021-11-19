@@ -25,7 +25,8 @@ USE employees;
 # WHERE last_name LIKE '%q%'
 #   AND last_name NOT LIKE '%qu%';
 
-SELECT first_name, last_name, DATEDIFF(CURDATE(),hire_date)
+SELECT emp_no, CONCAT(first_name,' ', last_name) AS 'EMPLOYEES NAME',
+       DATEDIFF(CURDATE(),hire_date)
     AS 'DAYS AT COMPANY'
 FROM employees
 WHERE hire_date LIKE '199%'
